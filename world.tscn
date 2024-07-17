@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://c2kisvqp7ynb"]
+[gd_scene load_steps=6 format=3 uid="uid://du2kcgbrlkp6g"]
 
 [ext_resource type="Script" path="res://characterBody2d.gd" id="1_fojey"]
 [ext_resource type="Texture2D" uid="uid://dv5voctvhfnga" path="res://icon.svg" id="2_vflw6"]
+[ext_resource type="PackedScene" uid="uid://c3tucc2sk0su6" path="res://test_node_2d.tscn" id="3_1bxra"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vhudm"]
 size = Vector2(129, 128)
@@ -10,6 +11,7 @@ size = Vector2(129, 128)
 size = Vector2(3119, 106)
 
 [node name="World" type="Node2D"]
+position = Vector2(333, 20)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 script = ExtResource("1_fojey")
@@ -26,10 +28,10 @@ shape = SubResource("RectangleShape2D_vhudm")
 position = Vector2(-428, 29)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(-1397, -171)
+position = Vector2(-23, 71)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(5.5, 616)
+position = Vector2(-919, 180)
 shape = SubResource("RectangleShape2D_imcag")
 
 [node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D"]
