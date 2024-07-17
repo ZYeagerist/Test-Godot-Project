@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://du2kcgbrlkp6g"]
 
-[ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_8d2xs"]
+[ext_resource type="Script" path="res://characterBody2d.gd" id="1_fojey"]
 [ext_resource type="Texture2D" uid="uid://dv5voctvhfnga" path="res://icon.svg" id="2_vflw6"]
 [ext_resource type="PackedScene" uid="uid://c3tucc2sk0su6" path="res://test_node_2d.tscn" id="3_1bxra"]
 
@@ -14,16 +14,18 @@ size = Vector2(3119, 106)
 position = Vector2(333, 20)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-script = ExtResource("1_8d2xs")
+script = ExtResource("1_fojey")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(-454, 35)
 texture = ExtResource("2_vflw6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(0.5, 0)
+position = Vector2(-453, 32)
 shape = SubResource("RectangleShape2D_vhudm")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(-428, 29)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(-23, 71)
@@ -33,11 +35,11 @@ position = Vector2(-919, 180)
 shape = SubResource("RectangleShape2D_imcag")
 
 [node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D"]
-offset_left = -1894.0
-offset_top = 68.0
-offset_right = 1228.0
-offset_bottom = 169.0
-metadata/_edit_use_anchors_ = true
+offset_left = -1557.0
+offset_top = -51.0
+offset_right = 1565.0
+offset_bottom = 50.0
 
-[node name="Node2D" parent="." instance=ExtResource("3_1bxra")]
-position = Vector2(34, 155)
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(-177, 217)
+texture = ExtResource("2_vflw6")
