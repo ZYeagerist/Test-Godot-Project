@@ -15,3 +15,9 @@ shape = SubResource("CircleShape2D_tjy4y")
 position = Vector2(-9, -9)
 scale = Vector2(18, 18)
 texture = SubResource("ImageTexture_5ue4w")
+
+[node name="Skeleton2D" type="Skeleton2D" parent="CharacterBody2D"]
+
+[node name="Bone2D" type="Bone2D" parent="CharacterBody2D/Skeleton2D"]
+
+[node name="PhysicalBone2D" type="PhysicalBone2D" parent="CharacterBody2D/Skeleton2D/Bone2D"]
